@@ -1,0 +1,84 @@
+:root{
+    --backgroundColor : #bbc;
+    font-weight: bold;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+section{
+    display: grid;
+    place-items: center;
+}
+
+
+input{
+    margin-bottom: 1em;
+    border-radius : 10px;
+}
+
+fieldset{
+    background-color: var(--backgroundColor);
+    width: 45em;
+}
+
+legend{
+    font-size: 1.2em;
+    width: 20em;
+    background-color: purple;
+    color: aliceblue;
+    text-align: center;
+    border: 3px dashed black;
+    border-radius: 5px;
+}
+
+textarea{
+    margin-left: 5em;
+    resize: horizontal;
+}
+
+textarea ~ output:nth-of-type(2){
+    color: white;
+    margin-left: 10em;
+}
+
+label:has(+ input) {
+    color: red;
+}
+
+#account_info input{
+    margin-bottom: 1.2em;
+    border-radius: inherit;
+    min-width: 25em;
+    height: 1.5em;
+}
+
+form div{
+    display: inline-block;
+    margin-left: 10em;
+}
+form p{
+    display: flow-root;/* overflow: auto; */
+    color: red;
+    background-color: var(--backgroundColor);
+}
+
+input[type="number"]{
+    text-align: center;
+}
+
+input[type="submit"]{
+    float: right;
+    background-color: lightseagreen;
+    min-width: 10em;
+    min-height: 2em;
+    font-size: medium;
+    margin-right: 10%;
+    margin-top: 1em;
+}
+
+.material-icons{
+    vertical-align: -4px;
+}
+

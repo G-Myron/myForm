@@ -1,5 +1,13 @@
-const form = document.querySelector("form");
-form.onsubmit = validate;
+const form = document.querySelector("#myform");
+
+form.addEventListener("submit",(ev)=>{
+    if(!form.checkValidity() && !validate()){
+        ev.preventDefault();
+    }
+    form.classList.add("validate");
+});
+
+//form.onsubmit = validate;
 
 ///////////////////////////////////////-----CV file upload-----///////////////////////////////////////
 const file = document.querySelector("#fileUp");
